@@ -17,6 +17,7 @@ RUN apk update && apk upgrade && apk add --no-cache --virtual .build-deps \
     python3-dev \
     musl-dev \
     postgresql-dev
+RUN apk add --no-cache libpq
 
 # install phantomjs
 ENV PHANTOMJS_VERSION 2.1.1
